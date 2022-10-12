@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-02T20:16:15.172Z",
+    "end": "2022-10-02T20:18:06.635Z",
+    "duration": 111463,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bda66fea-fc65-4095-950d-0e8c858d2588",
+      "title": "",
+      "fullFile": "cypress\\integration\\tests\\02_registrationAsCompany.spec.js",
+      "file": "cypress\\integration\\tests\\02_registrationAsCompany.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71542b8c-e1be-46e9-9428-c3d1b4bcc0d3",
+          "title": "Testing registration flow",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Links app - registration page",
+              "fullTitle": "Testing registration flow Open Links app - registration page",
+              "timedOut": null,
+              "duration": 3657,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "base.openLinksApp();",
+              "err": {},
+              "uuid": "a2307f7e-1690-4902-9f77-8674c02394fd",
+              "parentUUID": "71542b8c-e1be-46e9-9428-c3d1b4bcc0d3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Registration as Company flow",
+              "fullTitle": "Testing registration flow Registration as Company flow",
+              "timedOut": null,
+              "duration": 4949,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "company.registerAsCompanyButton();\ncompany.companyName();\ncompany.companyOIB();\ncompany.companyEmail();\ncompany.companyphone();\ncompany.contactPerson();\ncompany.companyAddress();\ncompany.zipCodeCompany();\ncompany.cityCompany();\ncompany.countryCompany();",
+              "err": {},
+              "uuid": "c203aec2-3318-4c0b-a158-2c7d1812e920",
+              "parentUUID": "71542b8c-e1be-46e9-9428-c3d1b4bcc0d3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register customer flow",
+              "fullTitle": "Testing registration flow Register customer flow",
+              "timedOut": null,
+              "duration": 35493,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registration.registerHeaderConfirmation();\nregistration.selectGender();\nregistration.typeFirstName(this.Data.firstName);\nregistration.typeLastName(this.Data.lastName);\nregistration.dateOfBirthDay();\nregistration.dateOfBirthMonth();\nregistration.dateOfBirthYear();\nregistration.typeEmail(emailAddress);\nregistration.streetAddress();\nregistration.phoneNumber();\nregistration.newsletter();\nregistration.typePassword(this.Data.password);\nregistration.typeConfirmPassword(this.Data.password);\nregistration.zipCode();\nregistration.city();\nregistration.country();\nregistration.typePassword(this.Data.password);\nregistration.typeConfirmPassword(this.Data.password);\nregistration.clickRegisterButton();\nregistration.successfullySentEmailMessage();\ncy.wait(15000);",
+              "err": {},
+              "uuid": "847b830b-5956-4717-aeb3-fed25b6a60ea",
+              "parentUUID": "71542b8c-e1be-46e9-9428-c3d1b4bcc0d3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Gets Account Activation email from Mailosaur",
+              "fullTitle": "Testing registration flow Gets Account Activation email from Mailosaur",
+              "timedOut": null,
+              "duration": 63913,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mailosaurGetMessage(serverId, {\n  sentTo: emailAddress\n}).then(email => {\n  Cypress.env('confirmationLink', email.html.links[1].href);\n  cy.visit(Cypress.env('confirmationLink'));\n  registration.accountSuccessfullyActivatedMessage();\n  cy.wait(15000);\n  cy.mailosaurGetMessage(serverId, {\n    sentTo: emailAddress\n  }).then(email => {\n    expect(email.subject).to.equal('Hvala na prijavi!');\n  });\n});",
+              "err": {},
+              "uuid": "582d05ea-9d92-42a5-97f6-440e78ebaf24",
+              "parentUUID": "71542b8c-e1be-46e9-9428-c3d1b4bcc0d3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a2307f7e-1690-4902-9f77-8674c02394fd",
+            "c203aec2-3318-4c0b-a158-2c7d1812e920",
+            "847b830b-5956-4717-aeb3-fed25b6a60ea",
+            "582d05ea-9d92-42a5-97f6-440e78ebaf24"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 108012,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
