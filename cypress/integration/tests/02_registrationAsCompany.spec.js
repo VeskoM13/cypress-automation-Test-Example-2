@@ -4,7 +4,7 @@ import Base from "../pages/Base";
 import Registration from "../pages/RegistrationPage";
 import RegistrationAsCompany from "../pages/RegistrationAsCompany"
 
-describe('Testing registration flow', function () {
+describe('Testing company registration flow', function () {
     const serverId = 'lmcquo6e'
     const serverDomain = 'lmcquo6e.mailosaur.net'
     const number = Math.floor(Math.random() * 101)
