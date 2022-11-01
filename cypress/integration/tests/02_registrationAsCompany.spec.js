@@ -74,7 +74,7 @@ describe('Testing registration flow as Company', function () {
     })
 
 
-    it('Gets Account Activation email from Mailosaur', () => {
+    it.skip('Gets Account Activation email from Mailosaur', () => {
         cy.mailosaurGetMessage(serverId, {
             sentTo: emailAddress
         }).then(email => {
