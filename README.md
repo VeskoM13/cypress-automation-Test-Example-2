@@ -33,7 +33,7 @@ Testing in Electron browser is recommended
 
 ## Command for creating HTML reports for specific tests:
 
-//Copy the full path of the test
+                                                ## Copy the full path of the test
 .\node_modules\.bin\cypress run --reporter mochawesome --spec C:\Users\Miodrag\TestCypresAutomation\cypress\integration\tests\01_registrationFlow.spec.js
 .\node_modules\.bin\cypress run --reporter mochawesome --spec C:\Users\Miodrag\TestCypresAutomation\cypress\integration\tests\02_registrationAsCompany.spec.js
 
