@@ -47,21 +47,21 @@ note:
   
    5. Download Appium Inspector
 
-    * Android Desired Capabilities(Example)
+   * Android Desired Capabilities(Example)
 
-    Desired Capability Key  Desired Capability Value
-        platformName	           Android
-       platformVersion	      [OS VERSION / IMAGE]
-         deviceName	         [EMULATED_DEVICE_NAME]
-            app	           /[PROJECT_PATH]/[APP_NAME].apk
-   appium:automationName	      UIAutomator2
+    * Desired Capability Key-------Desired Capability Value
+      1. platformName ------------------ Android
+      2. platformVersion---------------[OS VERSION / IMAGE]
+      3. deviceName-----------------[EMULATED_DEVICE_NAME]
+      4. app---------------------/[PROJECT_PATH]/[APP_NAME].apk
+      5. appium:automationName-----------UIAutomator2
 
    *  IOS Desired Capabilities(Emulator - App)
 
-   Desired Capability Key	Desired Capability Value
-        platformName	             IOS
-       platformVersion	     [OS VERSION / IMAGE]
-         deviceName	        [EMULATED_DEVICE_NAME]
-            app	        /[PROJECT_PATH]/[APP_NAME].app
-     appium:automationName	       XCUItest
+   Desired Capability Key----------Desired Capability Value
+       1. platformName--------------------IOS
+       2. platformVersion-----------[OS VERSION / IMAGE]
+       3. deviceName---------------[EMULATED_DEVICE_NAME]
+       4. app-------------------/[PROJECT_PATH]/[APP_NAME].app
+       5. appium:automationName-----------XCUItest
   
