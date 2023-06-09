@@ -58,7 +58,7 @@ note:
 
    *  IOS Desired Capabilities(Emulator - App)
 
-   Desired Capability Key----------Desired Capability Value
+    *  Desired Capability Key----------Desired Capability Value
        1. platformName--------------------IOS
        2. platformVersion-----------[OS VERSION / IMAGE]
        3. deviceName---------------[EMULATED_DEVICE_NAME]
