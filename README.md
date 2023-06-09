@@ -45,3 +45,23 @@ note:
 - The Mailosaur plugin is used to automate email testing and user account activation
   https://mailosaur.com/docs/frameworks-and-tools/cypress/
   
+   5. Download Appium Inspector
+
+    * Android Desired Capabilities(Example)
+
+    Desired Capability Key  Desired Capability Value
+        platformName	           Android
+       platformVersion	      [OS VERSION / IMAGE]
+         deviceName	         [EMULATED_DEVICE_NAME]
+            app	           /[PROJECT_PATH]/[APP_NAME].apk
+   appium:automationName	      UIAutomator2
+
+   *  IOS Desired Capabilities(Emulator - App)
+
+   Desired Capability Key	Desired Capability Value
+        platformName	             IOS
+       platformVersion	     [OS VERSION / IMAGE]
+         deviceName	        [EMULATED_DEVICE_NAME]
+            app	        /[PROJECT_PATH]/[APP_NAME].app
+     appium:automationName	       XCUItest
+  
